@@ -1,7 +1,7 @@
 # Development
 
 ### Link to Deployed Website
-If you used the stencil code, this is `https://happykitty444.github.io/DevelopmentUIUX`
+If you used the stencil code, this is `https://happykitty444.github.io/Development
 
 ### Goal and Value of the Application
 A simple tea shop website where a user can add drinks to their cart, see the price of each item, the quantity of each item in their cart, and the total price of their cart, and filter by caffiene inclusion or by type of drink, as well as sort the items alphabetically, or by price in ascending or descending order. It serves as a nice landing page for the shop, allows users to browse their selection dynamically, and plan orders ahead of time, much like the Trader Joes' website's online cart.
