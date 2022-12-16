@@ -1,13 +1,15 @@
 # Development
 
 ### Link to Deployed Website
-If you used the stencil code, this is `https://happykitty444.github.io/Development
+https://happykitty444.github.io/Development
 
 ### Goal and Value of the Application
 A simple tea shop website where a user can add drinks to their cart, see the price of each item, the quantity of each item in their cart, and the total price of their cart, and filter by caffiene inclusion or by type of drink, as well as sort the items alphabetically, or by price in ascending or descending order. It serves as a nice landing page for the shop, allows users to browse their selection dynamically, and plan orders ahead of time, much like the Trader Joes' website's online cart.
 
 ### Usability Principles Considered
 I attempted to ensure sufficient contrast for readability, and kept padding uniform to ensure a nice grid layout for the items. I made sure there was a button to add items to cart in the item card, and to remove an item from the cart in the cart. If you click it, it removes only one item at a time, decremeting an item quantity variable in the cart state. That value is incremented if you add a duplicate item to the cart. The buttons have hover states, and the sort buttons specifically have a focus state to indicate which sort is currently enabled.
+
+The filter and sort functions operate on the current RenderList in the item list state, so whatever sort or filter is already applied continues to be applied, with the new filter or sort on top of it. A note: the filters do work together, but it can only be seen if you select drink type Tea and caffeine Yes, because the other drink types all share the same caffeine value within their category (all the coffee has caffeine, none of the milk does, etc)
 
 ### Organization of Components
 The App.js component is a major file that sets the background and renders a MainItems component. This component holds the item data, the cartItems array state, the cartQuantities array state, and all of the functions relating to adding, removing, filtering, and sorting these arrays. It also renders a column whose first item is a Filters component containing titles and buttons to trigger the different filters and sorts. It renders the cart below that in the column, and then renders a second column containing the list of Items for purchase.
